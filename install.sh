@@ -47,4 +47,5 @@ make
 # install
 make install
 
+rm /usr/local/nginx
 ln -s /usr/local/$V /usr/local/nginx
