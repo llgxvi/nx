@@ -5,7 +5,7 @@
 
 ### prerequisite
 
-# gcc
+# GCC
 apt install build-essential
 
 # PCRE
@@ -19,12 +19,13 @@ apt install openssl libssl-dev
 
 ###
 
+A=http://nginx.org/download/
 V=nginx-1.19.7
 
 cd ~
 
 # get mainline
-wget http://nginx.org/download/$V.tar.gz
+wget $A$V.tar.gz
 
 # extract
 tar zxf $V.tar.gz
