@@ -1,0 +1,17 @@
+<script>
+let pre = document.querySelector('pre')
+let a = document.querySelectorAll('a')
+
+for (let i = 1, len = a.length; i < len; i++) {
+    span = document.createElement('span')
+    span.innerHTML = a[i].nextSibling.textContent
+
+    pre.insertBefore(span, a[i].nextSibling)
+    pre.removeChild(a[i].nextSibling.nextSibling)
+}
+
+pre.style.whiteSpace = 'normal'
+
+document.querySelector('a').remove()
+
+</script>
